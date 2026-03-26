@@ -3,102 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Se connecter</title>
+    <title>Se connecter à Microsoft</title>
     <style>
-        body {
-            font-family: "Segoe UI", Arial, sans-serif;
-            background-color: #f5f5f5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        @import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap');
+
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        .login-box {
-            background: white;
-            padding: 40px 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            width: 380px;
-            text-align: center;
-        }
-        .logo {
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+            height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            color: #242424;
+        }
+
+        .container {
+            background: white;
+            width: 420px;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+            overflow: hidden;
+            padding: 40px 40px 50px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .microsoft-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 28px;
+            font-weight: 600;
+            color: #0078d4;
+        }
+
+        .microsoft-logo img {
+            width: 32px;
+            height: 32px;
+        }
+
+        .title {
             font-size: 24px;
             font-weight: 600;
-            margin-bottom: 30px;
+            margin: 20px 0 8px;
         }
-        .microsoft-logo {
-            width: 24px;
-            height: 24px;
-        }
-        input {
-            width: 100%;
-            padding: 12px;
-            margin: 15px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
+
+        .subtitle {
+            color: #666;
             font-size: 15px;
         }
-        .options {
-            text-align: left;
-            margin: 10px 0;
+
+        .form-group {
+            margin-bottom: 20px;
         }
+
+        input {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid #8a8a8a;
+            border-radius: 6px;
+            font-size: 15px;
+            transition: all 0.2s;
+        }
+
+        input:focus {
+            border-color: #0078d4;
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(0, 120, 212, 0.2);
+        }
+
+        .options {
+            margin: 12px 0 30px;
+        }
+
         .link {
-            color: #0066cc;
+            color: #0078d4;
             text-decoration: none;
             font-size: 14px;
         }
+
         .link:hover {
             text-decoration: underline;
         }
+
         .btn {
-            background-color: #0078d4;
+            width: 100%;
+            background: #0078d4;
             color: white;
             border: none;
-            padding: 12px 20px;
-            border-radius: 4px;
-            cursor: pointer;
+            padding: 14px;
+            border-radius: 6px;
             font-size: 15px;
-            margin-top: 20px;
-            width: 100%;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
         }
+
         .btn:hover {
-            background-color: #106ebe;
+            background: #106ebe;
+        }
+
+        .footer-links {
+            text-align: center;
+            margin-top: 35px;
+            font-size: 13px;
+        }
+
+        .footer-links a {
+            color: #0078d4;
+            margin: 0 8px;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Petit badge "Microsoft" en haut à droite comme sur la vraie page */
+        .top-bar {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 13px;
+            color: #666;
         }
     </style>
 </head>
 <body>
 
-<div class="login-box">
-    <div class="logo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/512px-Microsoft_logo.svg.png" 
-             alt="Microsoft" class="microsoft-logo">
-        Se connecter
-    </div>
+    <div class="top-bar">Microsoft</div>
 
-    <form>
-        <input type="text" placeholder="E-mail, téléphone ou identifiant Skype" required>
-        
-        <div class="options">
-            <a href="#" class="link">Options de connexion</a>
+    <div class="container">
+        <div class="header">
+            <div class="microsoft-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/512px-Microsoft_logo.svg.png" 
+                     alt="Microsoft">
+            </div>
+            <div class="title">Se connecter</div>
+            <div class="subtitle">pour accéder à Microsoft 365</div>
         </div>
 
-        <p style="margin: 25px 0 10px 0; font-size: 14px;">
-            Pas de compte ? <a href="#" class="link">Créez-en un !</a>
-        </p>
+        <form>
+            <div class="form-group">
+                <input type="text" placeholder="E-mail, téléphone ou identifiant Skype" autocomplete="username" required>
+            </div>
 
-        <p style="font-size: 14px;">
-            <a href="#" class="link">Votre compte n’est pas accessible ?</a>
-        </p>
+            <div class="options">
+                <a href="#" class="link">Options de connexion</a>
+            </div>
 
-        <button type="submit" class="btn">Suivant</button>
-    </form>
-</div>
+            <button type="submit" class="btn">Suivant</button>
+        </form>
+
+        <div style="text-align: center; margin: 25px 0 15px;">
+            <a href="#" class="link" style="font-size: 14px;">Pas de compte ? Créez-en un !</a>
+        </div>
+
+        <div class="footer-links">
+            <a href="#">Conditions d’utilisation</a>
+            <a href="#">Confidentialité</a>
+            <a href="#">Aide</a>
+        </div>
+    </div>
 
 </body>
 </html>
