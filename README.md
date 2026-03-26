@@ -1,9 +1,3 @@
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Se connecter</title>
-<link rel="shortcut icon" href="https://raw.githubusercontent.com/PassAndSecure/Template_Gophish/4cd0bc9b249bde55e4f15e64e51bb42f11b306a6/Picture-Template/logo-micro-1.png">
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 <style>
     @font-face {
         font-family: 'Segoe UI';
@@ -11,7 +5,8 @@
     }
     body {
         margin: 0;
-        background: #f2f2f2;
+        background: url('https://wallpaperaccess.com/full/1938375.jpg') no-repeat center center fixed;
+        background-size: cover;
         height: 100vh;
         display: flex;
         align-items: center;
@@ -274,4 +269,3 @@
             }
         }
     </script>
-</body>
